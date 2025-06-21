@@ -1,0 +1,190 @@
+/**
+ * HTAccess Lockdown - Admin Styles
+ *
+ * @package HTAccess_Lockdown
+ * @since 1.0.0
+ */
+
+/* Admin Page Styles */
+.htaccess-lockdown-info {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.htaccess-lockdown-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.htaccess-lockdown-info p {
+    margin-bottom: 10px;
+}
+
+/* Settings Form Styles */
+.form-table th {
+    width: 200px;
+}
+
+.form-table td .description {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Status Indicators */
+.htaccess-status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.htaccess-status.enabled {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.htaccess-status.disabled {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.htaccess-status.warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+/* Button Styles */
+.htaccess-lockdown-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.htaccess-lockdown-button:hover {
+    background: #005a87;
+    color: white;
+}
+
+.htaccess-lockdown-button.secondary {
+    background: #6c757d;
+}
+
+.htaccess-lockdown-button.secondary:hover {
+    background: #545b62;
+}
+
+.htaccess-lockdown-button.danger {
+    background: #dc3545;
+}
+
+.htaccess-lockdown-button.danger:hover {
+    background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .htaccess-lockdown-info {
+        padding: 15px;
+    }
+    
+    .form-table th,
+    .form-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .form-table th {
+        padding-bottom: 5px;
+    }
+}
+
+/* Loading Spinner */
+.htaccess-spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Notices */
+.htaccess-notice {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.htaccess-notice.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.htaccess-notice.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.htaccess-notice.warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+/* Change Detection Notice */
+.htaccess-change-notice {
+    border-left: 4px solid #d63638;
+}
+
+.htaccess-change-notice h3 {
+    color: #d63638;
+    font-weight: 600;
+}
+
+.htaccess-change-notice .button {
+    vertical-align: baseline;
+    margin-right: 5px;
+}
+
+.htaccess-change-notice .button .dashicons {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.htaccess-change-notice .htaccess-spinner {
+    vertical-align: middle;
+}
+
+/* Admin notice improvements */
+.notice.htaccess-change-notice {
+    padding: 15px;
+}
+
+.notice.htaccess-change-notice .notice-dismiss {
+    top: 10px;
+    right: 10px;
+} 

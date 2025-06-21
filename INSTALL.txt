@@ -1,0 +1,219 @@
+=== HTAccess Lockdown - Installation Instructions ===
+
+Author: SPARKWEB Studio
+Plugin URI: https://sparkwebstudio.com/plugins/htaccess-lockdown
+Version: 1.0.0
+Release Date: June 8, 2025
+
+== SYSTEM REQUIREMENTS ==
+
+Before installing HTAccess Lockdown, ensure your WordPress site meets these requirements:
+
+* WordPress 5.0 or higher
+* PHP 7.4 or higher (PHP 8.0+ recommended)
+* Write permissions on plugin directory
+* Functioning WP-Cron system
+* Standard WordPress hosting environment
+
+== INSTALLATION METHODS ==
+
+= Method 1: WordPress Admin Dashboard (Recommended) =
+
+1. Log in to your WordPress admin dashboard
+2. Navigate to Plugins > Add New
+3. Click the "Upload Plugin" button
+4. Choose the htaccess-lockdown.zip file from your computer
+5. Click "Install Now"
+6. After installation completes, click "Activate Plugin"
+7. You'll see a success message and the plugin will be active
+
+= Method 2: Manual Installation via FTP =
+
+1. Download the htaccess-lockdown.zip file
+2. Extract the ZIP file to your computer
+3. Connect to your website via FTP client
+4. Navigate to /wp-content/plugins/ directory
+5. Upload the entire "htaccess-lockdown" folder
+6. Log in to WordPress admin dashboard
+7. Go to Plugins > Installed Plugins
+8. Find "HTAccess Lockdown" and click "Activate"
+
+= Method 3: WordPress CLI (WP-CLI) =
+
+If you have WP-CLI installed on your server:
+
+1. Navigate to your WordPress root directory:
+   cd /path/to/your/wordpress/site
+
+2. Install the plugin:
+   wp plugin install /path/to/htaccess-lockdown.zip
+
+3. Activate the plugin:
+   wp plugin activate htaccess-lockdown
+
+== POST-INSTALLATION SETUP ==
+
+After successful installation and activation:
+
+= Step 1: Access Plugin Settings =
+* Go to WordPress Admin > Settings > HTAccess Lockdown
+* You'll see the plugin's admin interface
+
+= Step 2: Configure Protection Settings =
+* Enable ".htaccess Protection" (enabled by default)
+* Choose "Auto Re-lock on Changes" setting (recommended: enabled)
+* Optionally enable "Restore from Backup on Changes"
+
+= Step 3: Review File Status =
+* Check the "File Status & Actions" section
+* Verify your .htaccess file is detected and readable
+* Note the current permissions and protection status
+
+= Step 4: Verify Backup Creation =
+* The plugin automatically creates a backup during activation
+* Confirm backup status shows "Available" in the admin interface
+* Backup is stored in: /wp-content/plugins/htaccess-lockdown/backups/
+
+= Step 5: Test Functionality =
+* Use "Check File Now" button to perform manual monitoring
+* Use "Lock File Now" button to manually apply protection
+* Monitor the plugin's response and any admin notices
+
+== INITIAL CONFIGURATION ==
+
+= Default Settings =
+The plugin activates with these default settings:
+* Protection: Enabled
+* Auto Re-lock: Enabled  
+* Restore from Backup: Disabled
+
+= Recommended Configuration =
+For maximum security, we recommend:
+* Keep "Enable .htaccess Protection" checked
+* Keep "Auto Re-lock on Changes" checked
+* Consider enabling "Restore from Backup" only if you don't frequently modify .htaccess
+
+== DIRECTORY PERMISSIONS ==
+
+The plugin requires specific permissions to function properly:
+
+= Required Permissions =
+* Plugin directory: 755 (rwxr-xr-x)
+* Backup directory: 755 (rwxr-xr-x)
+* .htaccess file: 644 initially (will be changed to 444 when locked)
+
+= Setting Permissions via FTP =
+If you encounter permission issues:
+1. Connect via FTP to your site
+2. Navigate to /wp-content/plugins/htaccess-lockdown/
+3. Set folder permissions to 755
+4. Set backup folder permissions to 755
+5. Ensure .htaccess file is writable initially (644)
+
+== TROUBLESHOOTING INSTALLATION ==
+
+= Plugin Won't Activate =
+* Check PHP version meets minimum requirement (7.4+)
+* Verify WordPress version is 5.0 or higher
+* Check for plugin conflicts by deactivating other plugins temporarily
+* Review WordPress error logs for specific error messages
+
+= Permission Errors =
+* Ensure web server has write access to plugin directory
+* Check if .htaccess file exists in WordPress root
+* Verify file ownership matches web server user
+* Some shared hosts may restrict file permission changes
+
+= Backup Creation Fails =
+* Check write permissions on plugin directory
+* Ensure sufficient disk space available
+* Verify .htaccess file exists and is readable
+* Check WordPress debug logs for filesystem errors
+
+= WP-Cron Issues =
+* Verify WP-Cron is functioning: wp cron event list (WP-CLI)
+* Check if hosting provider blocks cron jobs
+* Some caching plugins may interfere with cron
+* Test with a cron monitoring plugin
+
+== FILE VERIFICATION ==
+
+After installation, verify these files exist:
+
+= Core Plugin Files =
+* /wp-content/plugins/htaccess-lockdown/plugin.php
+* /wp-content/plugins/htaccess-lockdown/src/HTAccess_Lockdown.php
+* /wp-content/plugins/htaccess-lockdown/src/Admin/HTAccess_Lockdown_Admin.php
+
+= Asset Files =
+* /wp-content/plugins/htaccess-lockdown/assets/css/admin.css
+* /wp-content/plugins/htaccess-lockdown/assets/js/admin.js
+
+= Security Files =
+* /wp-content/plugins/htaccess-lockdown/backups/.htaccess
+* /wp-content/plugins/htaccess-lockdown/backups/index.php
+
+= Documentation =
+* /wp-content/plugins/htaccess-lockdown/README.md
+* /wp-content/plugins/htaccess-lockdown/CHANGELOG.md
+* /wp-content/plugins/htaccess-lockdown/INSTALL.txt (this file)
+
+== DEBUGGING INSTALLATION ISSUES ==
+
+= Enable WordPress Debug Mode =
+Add these lines to wp-config.php:
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
+
+Then check /wp-content/debug.log for HTAccess Lockdown messages.
+
+= Common Error Messages =
+* "Cannot initialize WP Filesystem API" - Check file permissions
+* "Failed to create backup directory" - Verify write permissions
+* ".htaccess file does not exist" - Create an empty .htaccess file in WordPress root
+
+== UNINSTALLATION ==
+
+If you need to remove the plugin:
+
+= Automatic Cleanup =
+1. Go to Plugins > Installed Plugins
+2. Deactivate "HTAccess Lockdown" 
+3. Click "Delete" link
+4. Confirm deletion
+
+The plugin automatically:
+* Restores original .htaccess file permissions
+* Removes all scheduled monitoring tasks
+* Cleans up all database options
+* Removes backup files
+
+= Manual Cleanup (if needed) =
+If automatic cleanup fails:
+1. Remove plugin files via FTP from /wp-content/plugins/htaccess-lockdown/
+2. Remove database options with prefix "htaccess_lockdown_"
+3. Clear any scheduled WP-Cron events
+
+== SUPPORT ==
+
+If you experience issues during installation:
+
+* Website: https://sparkwebstudio.com
+* Support: https://sparkwebstudio.com/support  
+* Documentation: https://sparkwebstudio.com/docs/htaccess-lockdown
+
+Include your WordPress version, PHP version, and any error messages when requesting support.
+
+== NEXT STEPS ==
+
+After successful installation:
+1. Read the full documentation in README.md
+2. Review the comprehensive changelog in CHANGELOG.md
+3. Consider setting up monitoring alerts
+4. Test the plugin in a staging environment first
+
+---
+
+Thank you for choosing HTAccess Lockdown by SPARKWEB Studio!
+Visit us at https://sparkwebstudio.com for more WordPress security solutions. 

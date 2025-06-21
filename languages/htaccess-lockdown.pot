@@ -1,0 +1,361 @@
+# Copyright (C) 2025 SPARKWEB Studio
+# This file is distributed under the same license as the HTAccess Lockdown package.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTAccess Lockdown 1.0.0\n"
+"Report-Msgid-Bugs-To: https://sparkwebstudio.com/support\n"
+"POT-Creation-Date: 2025-06-08 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WordPress\n"
+"X-Domain: htaccess-lockdown\n"
+
+#. Plugin Name of the plugin
+msgid "HTAccess Lockdown"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://sparkwebstudio.com/plugins/htaccess-lockdown"
+msgstr ""
+
+#. Description of the plugin
+msgid "A comprehensive security plugin for managing .htaccess file protection and monitoring with real-time change detection and automatic backup functionality."
+msgstr ""
+
+#. Author of the plugin
+msgid "SPARKWEB Studio"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://sparkwebstudio.com"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot initialize WP Filesystem API"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot lock .htaccess: File does not exist at %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot read .htaccess file permissions"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to set .htaccess file permissions to read-only (0444)"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Successfully locked .htaccess file permissions to read-only"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot unlock .htaccess: File does not exist at %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to restore .htaccess file permissions to %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Successfully unlocked .htaccess file permissions to %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot store hash: .htaccess file does not exist or cannot be read"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Stored .htaccess file hash: %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] .htaccess file no longer exists - monitoring cannot continue"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] SECURITY ALERT: .htaccess file has been modified!"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Original hash: %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Current hash: %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] File modification detected at: %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] File content restored from backup after modification detected"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to restore file content from backup after modification detected"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] File permissions reset to read-only (444) after modification detected"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to reset file permissions after modification detected"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to schedule daily .htaccess monitoring"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Scheduled daily .htaccess monitoring"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Unscheduled .htaccess monitoring"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to unschedule .htaccess monitoring"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot initialize WP Filesystem API for backup"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot create backup: .htaccess file does not exist"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to create backup directory: %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to create backup copy of .htaccess file"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Successfully created .htaccess backup at: %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot initialize WP Filesystem API for restore"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot restore: backup file does not exist at %s"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Cannot make .htaccess file writable for restoration"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Failed to restore .htaccess file from backup"
+msgstr ""
+
+#: src/HTAccess_Lockdown.php
+msgid "[HTAccess Lockdown] Successfully restored .htaccess file from backup"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Protection Settings"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Configure .htaccess file protection and monitoring settings."
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Enable .htaccess Protection"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Enable .htaccess file protection"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "When enabled, the .htaccess file will be locked with read-only permissions and monitored for changes."
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Auto Re-lock on Changes"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Automatically re-lock file when changes are detected"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "When enabled, the file permissions will be automatically reset to read-only if unauthorized changes are detected."
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Restore from Backup on Changes"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Restore original .htaccess content from backup when changes are detected"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "When enabled, the .htaccess file content will be restored from the backup created during plugin activation if unauthorized changes are detected."
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Backup Status:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Available"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Not Found"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "File Status & Actions"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Current .htaccess file status and available actions."
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Save Settings"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "File Information"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Warning"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid ".htaccess file does not exist"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "File Path:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Current Permissions:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Writable"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Read-only"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Last Modified:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Protection Status:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Protected"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Unprotected"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "File Monitoring"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Monitoring Active:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Yes"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "No"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Next Check:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Last Check:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Changes Detected:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Last Change:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Backup Available:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Restorations:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Last:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "File Hash Match:"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Manual Actions"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Perform manual checks and actions on the .htaccess file."
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Check File Now"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Manually check for file changes"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Lock File Now"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Manually lock file permissions"
+msgstr ""
+
+#: src/Admin/HTAccess_Lockdown_Admin.php
+msgid "Settings"
+msgstr "" 
